@@ -4,7 +4,8 @@ import { Menu, X, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
-const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/EFLjvkiRpJFRpsqb.png";
+const LOGO_WHITE = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/NtCbWwLDTHrrEjNo.png";
+const LOGO_GREEN = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/WszKWNrSYCbZYHfn.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -34,6 +35,7 @@ export default function Navbar() {
 
   // Determine if we're on the home page hero (dark background)
   const isHome = location === "/";
+  const useLightLogo = !scrolled && isHome;
 
   return (
     <header
@@ -47,28 +49,12 @@ export default function Navbar() {
     >
       <div className="container flex items-center justify-between h-18">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
+        <Link href="/" className="flex items-center group">
           <img
-            src={LOGO_URL}
+            src={useLightLogo ? LOGO_WHITE : LOGO_GREEN}
             alt="Xirge Capital"
-            className="h-10 w-10 rounded-md object-contain"
+            className="h-9 md:h-10 object-contain transition-opacity duration-300"
           />
-          <div className="flex flex-col leading-tight">
-            <span
-              className={`font-serif text-lg font-semibold tracking-wide transition-colors ${
-                !scrolled && isHome ? "text-white" : "text-xgreen-dark"
-              }`}
-            >
-              Xirge
-            </span>
-            <span
-              className={`text-[10px] uppercase tracking-[0.25em] font-sans transition-colors ${
-                !scrolled && isHome ? "text-white/70" : "text-muted-foreground"
-              }`}
-            >
-              Capital
-            </span>
-          </div>
         </Link>
 
         {/* Desktop Nav */}
