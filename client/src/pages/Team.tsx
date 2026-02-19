@@ -18,7 +18,7 @@ const teamMembers = [
     role: "Co-Fund Manager",
     photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/eKcPzaNoSxBPDvac.jpg",
     linkedin: "https://www.linkedin.com/in/sahmi-chowdhury/",
-    bio: "Sahmi leads deal sourcing and investor relations at Xirge Capital, drawing on a career built across some of the most respected names in finance and technology. At Mastercard, he drives Global Bill Pay and Fintech Product Development as a Product Manager within New Payment Platforms. Previously, he served as an Investment Analyst at True Capital Management, where he evaluated opportunities across asset classes, and as a Trade Settlements Specialist at Brown Brothers Harriman, gaining deep exposure to capital markets infrastructure. His earlier experience includes deal advisory at KPMG and transaction advisory at EY. Sahmi holds a B.S.B.A. in Finance and Marketing (Cum Laude) from Northeastern University and a Commercial Real Estate Certificate from Cornell University. He also co-founded Jore, a media and culture venture. Fluent in English, Bengali, and Arabic, he brings a global perspective to every deal.",
+    bio: "Sahmi leads deal sourcing and investor relations at Xirge Capital, drawing on a career built across names in finance and technology. At Mastercard, he drives Global Bill Pay as a Product Manager within New Payment Platforms. Previously, he served as an Investment Analyst at True Capital Management, where he evaluated opportunities across asset classes, gaining deep exposure to capital markets infrastructure. Growing up in the Middle East as a Bangladeshi-American, he brings a global perspective to every deal.",
     specialties: ["Deal Sourcing", "Investor Relations", "Capital Markets"],
   },
   {
@@ -83,11 +83,11 @@ export default function Team() {
               >
                 {/* Photo area */}
                 <div className="relative p-8 pb-6 text-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-3 border-xgreen/20 mx-auto mb-5 group-hover:border-xgreen/40 transition-colors">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-3 border-xgreen/20 mx-auto mb-5 group-hover:border-xgreen/40 transition-colors aspect-square">
                     <img
                       src={member.photo}
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <h3 className="text-xl font-serif font-bold text-foreground">{member.name}</h3>
