@@ -16,23 +16,26 @@ const teamMembers = [
   {
     name: "Sahmi Chowdhury",
     role: "Co-Fund Manager",
-    initials: "SC",
-    bio: "Sahmi brings a deep understanding of ethical finance and a passion for making responsible investing accessible. With expertise in cash-flowing business analysis and portfolio strategy, he leads Xirge's investment screening process and ensures every opportunity meets both financial performance targets and ethical standards.",
-    specialties: ["Ethical Finance", "Business Analysis", "Portfolio Strategy"],
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/eKcPzaNoSxBPDvac.jpg",
+    linkedin: "https://www.linkedin.com/in/sahmi-chowdhury/",
+    bio: "Sahmi is a Product Manager at Mastercard, where he leads Global Bill Pay and Fintech Product Development within New Payment Platforms. He holds a B.S.B.A. in Finance and Marketing (Cum Laude) from Northeastern University and a Commercial Real Estate Certificate from Cornell University. His career spans investment analysis at True Capital Management, deal advisory at KPMG, transaction advisory at EY, and trade settlements at Brown Brothers Harriman. Sahmi also co-founded Jore, a media and culture venture, and began his finance journey with a summer internship at Grameen Bank. He brings a global perspective to Xirge, fluent in English, Bengali, and Arabic.",
+    specialties: ["Product Strategy", "Investment Analysis", "Fintech"],
   },
   {
     name: "Fraily Ventura",
     role: "Co-Fund Manager",
-    initials: "FV",
-    bio: "Fraily is a seasoned investor with a keen eye for real estate opportunities and pre-IPO deals. Her analytical approach to due diligence and market research has been instrumental in identifying high-potential investments across multiple sectors. She oversees Xirge's real estate portfolio and manages investor relations.",
-    specialties: ["Real Estate", "Pre-IPO Deals", "Investor Relations"],
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/MFANmDlcYunGRnIZ.jpeg",
+    linkedin: "https://www.linkedin.com/in/fraily-ventura-53722b132/",
+    bio: "Fraily is a Tax Manager at Deloitte in the Investment Management group, where he advises on complex tax structures for investment funds and financial institutions. He is a licensed Certified Public Accountant (CPA) and holds a BBA in Accounting from the University of Rhode Island. His deep expertise in investment management tax compliance, fund structuring, and regulatory frameworks gives Xirge Capital a critical edge in evaluating the financial and tax efficiency of every investment opportunity. Fraily is also an active member of MetroScholars, a New Jersey-based non-profit focused on professional development.",
+    specialties: ["Tax & Compliance", "Investment Management", "Fund Structuring"],
   },
   {
     name: "James DiSanto",
     role: "Co-Fund Manager",
-    initials: "JD",
-    bio: "James combines financial acumen with operational expertise to evaluate and manage Xirge's diverse portfolio of cash-flowing businesses. His background in business operations and financial modeling ensures that every investment undergoes rigorous analysis. He leads the fund's market research and strategic initiatives.",
-    specialties: ["Operations", "Financial Modeling", "Market Research"],
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/MbHNSJyNjrXGimNC.jpeg",
+    linkedin: "https://www.linkedin.com/in/james-disanto-267224132/",
+    bio: "James is a finance professional with a strong foundation in financial analysis, business operations, and market research. His analytical approach to evaluating cash-flowing businesses and real estate opportunities ensures that every investment in the Xirge portfolio undergoes rigorous due diligence. James leads the fund's strategic initiatives and plays a key role in sourcing and structuring deals across multiple asset classes, including pre-IPO opportunities. His disciplined, data-driven methodology complements the team's collective expertise and strengthens Xirge Capital's investment thesis.",
+    specialties: ["Financial Analysis", "Deal Sourcing", "Strategic Planning"],
   },
 ];
 
@@ -55,8 +58,8 @@ export default function Team() {
               The people behind <span className="text-gradient-green italic">Xirge.</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-              Our team of co-fund managers brings together diverse expertise in finance, real estate,
-              and business operations — united by a shared commitment to ethical investing
+              Our team of co-fund managers brings together diverse expertise in finance, tax,
+              and product strategy — united by a shared commitment to ethical investing
               and building generational wealth.
             </motion.p>
           </motion.div>
@@ -78,10 +81,14 @@ export default function Team() {
                 variants={fadeUp}
                 className="group relative rounded-xl bg-white border border-border hover:border-xgreen/30 hover:shadow-lg transition-all duration-500 overflow-hidden"
               >
-                {/* Avatar area */}
+                {/* Photo area */}
                 <div className="relative p-8 pb-6 text-center">
-                  <div className="w-28 h-28 rounded-full bg-xgreen/10 border-2 border-xgreen/20 flex items-center justify-center mx-auto mb-5 group-hover:border-xgreen/40 transition-colors">
-                    <span className="text-3xl font-serif font-bold text-xgreen">{member.initials}</span>
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-3 border-xgreen/20 mx-auto mb-5 group-hover:border-xgreen/40 transition-colors">
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-xl font-serif font-bold text-foreground">{member.name}</h3>
                   <p className="text-xgreen text-sm font-medium mt-1">{member.role}</p>
@@ -93,7 +100,7 @@ export default function Team() {
                 </div>
 
                 {/* Specialties */}
-                <div className="px-8 pb-8">
+                <div className="px-8 pb-6">
                   <div className="flex flex-wrap gap-2">
                     {member.specialties.map((s) => (
                       <span
@@ -106,20 +113,17 @@ export default function Team() {
                   </div>
                 </div>
 
-                {/* Social links placeholder */}
+                {/* Social links */}
                 <div className="px-8 pb-8 flex gap-3">
-                  <button
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-9 h-9 rounded-lg bg-muted/50 border border-border flex items-center justify-center text-muted-foreground hover:text-xgreen hover:border-xgreen/30 transition-colors"
-                    aria-label={`Email ${member.name}`}
-                  >
-                    <Mail className="w-4 h-4" />
-                  </button>
-                  <button
-                    className="w-9 h-9 rounded-lg bg-muted/50 border border-border flex items-center justify-center text-muted-foreground hover:text-xgreen hover:border-xgreen/30 transition-colors"
-                    aria-label={`LinkedIn ${member.name}`}
+                    aria-label={`LinkedIn profile of ${member.name}`}
                   >
                     <Linkedin className="w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
               </motion.div>
             ))}

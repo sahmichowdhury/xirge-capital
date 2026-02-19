@@ -25,3 +25,6 @@
 - [x] Update Home hero messaging to focus on investment opportunity
 - [x] Update all pages to use white/green color palette
 - [x] Keep News & Insights section (user liked it)
+- [x] Upload team headshots to S3 (Sahmi, Fraily, James)
+- [x] Research LinkedIn profiles for professional bios
+- [x] Update Team page with real photos and LinkedIn-based bios
