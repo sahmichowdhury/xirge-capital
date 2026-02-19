@@ -16,3 +16,12 @@
 - [x] Routing: all pages wired in App.tsx
 - [x] Vitest tests for key functionality
 - [x] Responsive design across all pages
+- [x] Switch color scheme from dark navy/gold to white and green
+- [x] Integrate uploaded Xirge logo (green diamond + XIRGE text)
+- [x] Reposition Shariah compliance as differentiator, not primary focus
+- [x] Emphasize ethical investing for ALL investors, Shariah = inclusive
+- [x] Remove overly educational/teaching tone, keep it semi-basic
+- [x] Update About page: remove "faith meets finance", reframe messaging
+- [x] Update Home hero messaging to focus on investment opportunity
+- [x] Update all pages to use white/green color palette
+- [x] Keep News & Insights section (user liked it)

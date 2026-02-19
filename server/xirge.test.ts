@@ -93,7 +93,7 @@ describe("Xirge Capital - Article Data Validation", () => {
       expect(article.category).toBeTruthy();
       expect(article.date).toBeTruthy();
       expect(article.readTime).toBeTruthy();
-      expect(["investing-101", "shariah-finance", "real-estate", "market-insights"]).toContain(article.category);
+      expect(["investing-basics", "ethical-finance", "real-estate", "market-insights"]).toContain(article.category);
     }
   });
 

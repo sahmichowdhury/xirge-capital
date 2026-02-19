@@ -34,9 +34,9 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark">
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
-          <Toaster />
+          <Toaster position="top-right" richColors />
           <Router />
         </TooltipProvider>
       </ThemeProvider>

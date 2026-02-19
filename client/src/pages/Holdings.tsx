@@ -8,7 +8,7 @@ import {
   TrendingUp,
   ArrowRight,
   Filter,
-  Shield,
+  Leaf,
   MapPin,
   Calendar,
   BarChart3,
@@ -89,7 +89,7 @@ const holdings: Holding[] = [
     description: "A vertically integrated halal food production and distribution company serving growing demand in North American markets.",
     sector: "Food & Beverage",
     vintage: "2024",
-    highlight: "Shariah Aligned",
+    highlight: "Ethically Aligned",
   },
   {
     id: "6",
@@ -125,14 +125,14 @@ const holdings: Holding[] = [
 ];
 
 const categoryConfig = {
-  "real-estate": { icon: Building2, label: "Real Estate", color: "text-emerald-400" },
-  "pre-ipo": { icon: Landmark, label: "Pre-IPO", color: "text-blue-400" },
-  business: { icon: DollarSign, label: "Cash-Flowing Business", color: "text-amber-400" },
+  "real-estate": { icon: Building2, label: "Real Estate", color: "text-xgreen" },
+  "pre-ipo": { icon: Landmark, label: "Pre-IPO", color: "text-blue-600" },
+  business: { icon: DollarSign, label: "Cash-Flowing Business", color: "text-amber-600" },
 };
 
 const statusConfig = {
-  active: { label: "Active", dotColor: "bg-emerald-400" },
-  "fully-funded": { label: "Fully Funded", dotColor: "bg-gold" },
+  active: { label: "Active", dotColor: "bg-xgreen" },
+  "fully-funded": { label: "Fully Funded", dotColor: "bg-amber-500" },
   exited: { label: "Exited", dotColor: "bg-muted-foreground" },
 };
 
@@ -151,9 +151,7 @@ export default function Holdings() {
   return (
     <div className="min-h-screen pt-24">
       {/* Hero */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-dark/50 to-transparent" />
-        <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-gold/3 rounded-full blur-[120px]" />
+      <section className="py-20 relative overflow-hidden bg-xgreen-50">
         <div className="container relative">
           <motion.div
             initial="hidden"
@@ -161,23 +159,23 @@ export default function Holdings() {
             variants={stagger}
             className="max-w-3xl"
           >
-            <motion.p variants={fadeUp} className="text-gold text-xs uppercase tracking-[0.3em] mb-3 font-medium">
+            <motion.p variants={fadeUp} className="text-xgreen text-xs uppercase tracking-[0.3em] mb-3 font-medium">
               Our Portfolio
             </motion.p>
-            <motion.h1 variants={fadeUp} className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-[1.1]">
-              Xirge's <span className="text-gradient-gold italic">holdings.</span>
+            <motion.h1 variants={fadeUp} className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-[1.1] text-foreground">
+              Xirge's <span className="text-gradient-green italic">holdings.</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-              Explore our diversified portfolio of Shariah-compliant investments across cash-flowing
+              Explore our diversified portfolio of ethically-screened investments across cash-flowing
               businesses, real estate, and pre-IPO opportunities. Each investment undergoes rigorous
-              due diligence and Shariah screening.
+              due diligence and compliance screening.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
       {/* Filters */}
-      <section className="py-6 border-b border-border/30 sticky top-18 z-40 bg-background/80 backdrop-blur-xl">
+      <section className="py-6 border-b border-border sticky top-18 z-40 bg-background/95 backdrop-blur-xl">
         <div className="container">
           <div className="flex items-center gap-3 overflow-x-auto pb-1">
             <Filter className="w-4 h-4 text-muted-foreground shrink-0" />
@@ -187,23 +185,23 @@ export default function Holdings() {
                 onClick={() => setActiveFilter(opt.value)}
                 className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
                   activeFilter === opt.value
-                    ? "bg-gold/15 text-gold border border-gold/30"
-                    : "text-muted-foreground hover:text-foreground border border-border/30 hover:border-border/60"
+                    ? "bg-xgreen/10 text-xgreen border border-xgreen/30"
+                    : "text-muted-foreground hover:text-foreground border border-border hover:border-border"
                 }`}
               >
                 {opt.label}
               </button>
             ))}
             <div className="ml-auto flex items-center gap-2 text-xs text-muted-foreground shrink-0">
-              <Shield className="w-3.5 h-3.5 text-gold" />
-              All holdings are Shariah compliant
+              <Leaf className="w-3.5 h-3.5 text-xgreen" />
+              All holdings are ethically screened
             </div>
           </div>
         </div>
       </section>
 
       {/* Holdings Grid */}
-      <section className="py-16">
+      <section className="py-16 bg-background">
         <div className="container">
           <motion.div
             initial="hidden"
@@ -221,13 +219,13 @@ export default function Holdings() {
                   key={holding.id}
                   variants={fadeUp}
                   layout
-                  className="group rounded-xl bg-gradient-card border border-border/40 hover:border-gold/30 transition-all duration-500 overflow-hidden"
+                  className="group rounded-xl bg-white border border-border hover:border-xgreen/30 hover:shadow-lg transition-all duration-500 overflow-hidden"
                 >
                   {/* Header */}
                   <div className="p-6 pb-4">
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center">
+                        <div className="w-10 h-10 rounded-lg bg-xgreen/10 flex items-center justify-center">
                           <CatIcon className={`w-5 h-5 ${cat.color}`} />
                         </div>
                         <div>
@@ -265,14 +263,14 @@ export default function Holdings() {
                   </div>
 
                   {/* Footer */}
-                  <div className="px-6 py-4 bg-background/30 border-t border-border/20 flex items-center justify-between">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-medium text-gold">
+                  <div className="px-6 py-4 bg-muted/30 border-t border-border/50 flex items-center justify-between">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-medium text-xgreen">
                       <TrendingUp className="w-3.5 h-3.5" />
                       {holding.highlight}
                     </span>
-                    <span className="inline-flex items-center gap-1 text-xs text-gold/60">
-                      <Shield className="w-3 h-3" />
-                      Shariah Compliant
+                    <span className="inline-flex items-center gap-1 text-xs text-xgreen/60">
+                      <Leaf className="w-3 h-3" />
+                      Ethically Screened
                     </span>
                   </div>
                 </motion.div>
@@ -289,7 +287,7 @@ export default function Holdings() {
       </section>
 
       {/* Disclaimer + CTA */}
-      <section className="py-20 bg-gradient-card border-t border-border/30">
+      <section className="py-20 bg-xgreen-50">
         <div className="container">
           <motion.div
             initial="hidden"
@@ -298,8 +296,8 @@ export default function Holdings() {
             variants={stagger}
             className="max-w-3xl mx-auto text-center"
           >
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-serif font-bold mb-4">
-              Interested in <span className="text-gradient-gold italic">investing?</span>
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-serif font-bold mb-4 text-foreground">
+              Interested in <span className="text-gradient-green italic">investing?</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-muted-foreground mb-8">
               Our team is ready to discuss current and upcoming investment opportunities.
@@ -307,7 +305,7 @@ export default function Holdings() {
             </motion.p>
             <motion.div variants={fadeUp}>
               <Link href="/contact">
-                <Button size="lg" className="bg-gold hover:bg-gold-dark text-navy-dark font-semibold gap-2 px-8">
+                <Button size="lg" className="bg-xgreen hover:bg-xgreen-dark text-white font-semibold gap-2 px-8">
                   Contact Our Team
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -316,7 +314,7 @@ export default function Holdings() {
             <motion.p variants={fadeUp} className="mt-8 text-xs text-muted-foreground/60 leading-relaxed max-w-xl mx-auto">
               Past performance is not indicative of future results. All investments carry risk.
               Investment opportunities are subject to availability and qualification criteria.
-              All holdings are screened for Shariah compliance.
+              All holdings are screened for ethical and Shariah compliance.
             </motion.p>
           </motion.div>
         </div>
