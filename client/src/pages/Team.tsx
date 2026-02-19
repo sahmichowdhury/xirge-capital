@@ -18,8 +18,8 @@ const teamMembers = [
     role: "Co-Fund Manager",
     photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/eKcPzaNoSxBPDvac.jpg",
     linkedin: "https://www.linkedin.com/in/sahmi-chowdhury/",
-    bio: "Sahmi is a Product Manager at Mastercard, where he leads Global Bill Pay and Fintech Product Development within New Payment Platforms. He holds a B.S.B.A. in Finance and Marketing (Cum Laude) from Northeastern University and a Commercial Real Estate Certificate from Cornell University. His career spans investment analysis at True Capital Management, deal advisory at KPMG, transaction advisory at EY, and trade settlements at Brown Brothers Harriman. Sahmi also co-founded Jore, a media and culture venture, and began his finance journey with a summer internship at Grameen Bank. He brings a global perspective to Xirge, fluent in English, Bengali, and Arabic.",
-    specialties: ["Product Strategy", "Investment Analysis", "Fintech"],
+    bio: "Sahmi leads deal sourcing and investor relations at Xirge Capital, drawing on a career built across some of the most respected names in finance and technology. At Mastercard, he drives Global Bill Pay and Fintech Product Development as a Product Manager within New Payment Platforms. Previously, he served as an Investment Analyst at True Capital Management, where he evaluated opportunities across asset classes, and as a Trade Settlements Specialist at Brown Brothers Harriman, gaining deep exposure to capital markets infrastructure. His earlier experience includes deal advisory at KPMG and transaction advisory at EY. Sahmi holds a B.S.B.A. in Finance and Marketing (Cum Laude) from Northeastern University and a Commercial Real Estate Certificate from Cornell University. He also co-founded Jore, a media and culture venture. Fluent in English, Bengali, and Arabic, he brings a global perspective to every deal.",
+    specialties: ["Deal Sourcing", "Investor Relations", "Capital Markets"],
   },
   {
     name: "Fraily Ventura",
@@ -34,8 +34,8 @@ const teamMembers = [
     role: "Co-Fund Manager",
     photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/MbHNSJyNjrXGimNC.jpeg",
     linkedin: "https://www.linkedin.com/in/james-disanto-267224132/",
-    bio: "James is a finance professional with a strong foundation in financial analysis, business operations, and market research. His analytical approach to evaluating cash-flowing businesses and real estate opportunities ensures that every investment in the Xirge portfolio undergoes rigorous due diligence. James leads the fund's strategic initiatives and plays a key role in sourcing and structuring deals across multiple asset classes, including pre-IPO opportunities. His disciplined, data-driven methodology complements the team's collective expertise and strengthens Xirge Capital's investment thesis.",
-    specialties: ["Financial Analysis", "Deal Sourcing", "Strategic Planning"],
+    bio: "James brings hands-on operational expertise to Xirge Capital, grounded in years of factory management, logistics, and supply chain operations. His background in managing production workflows, optimizing operational efficiency, and overseeing end-to-end logistics gives the fund a practical, ground-level understanding of how cash-flowing businesses actually run. James evaluates every potential investment through an operations-first lens — assessing not just the financials, but the operational infrastructure, scalability, and day-to-day execution capability of each business. His disciplined, systems-driven approach to due diligence ensures that Xirge's portfolio companies are built on strong operational foundations, complementing the team's financial and tax expertise.",
+    specialties: ["Operations & Logistics", "Factory Management", "Due Diligence"],
   },
 ];
 

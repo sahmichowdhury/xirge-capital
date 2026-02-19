@@ -28,3 +28,6 @@
 - [x] Upload team headshots to S3 (Sahmi, Fraily, James)
 - [x] Research LinkedIn profiles for professional bios
 - [x] Update Team page with real photos and LinkedIn-based bios
+- [x] Rewrite Sahmi's bio to highlight Mastercard, True Capital Management, and BBH more prominently
+- [x] Rewrite James's bio to focus on factory management, logistics, and operations
+- [x] Add deal sourcing and investor relations to Sahmi's bio and specialties
