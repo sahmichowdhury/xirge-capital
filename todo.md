@@ -1,0 +1,36 @@
+# Project TODO
+
+- [x] Design system: theme colors, fonts, global CSS
+- [x] Shared layout with navigation (logo, page links, LP Login button)
+- [x] Footer component with links and branding
+- [x] Home page: hero section with trust-building messaging, Shariah compliance, FOMO
+- [x] Home page: value proposition sections (cash flow, real estate, pre-IPO)
+- [x] Home page: CTA sections driving to contact/holdings
+- [x] About Us page: mission, investment philosophy, Shariah compliance
+- [x] Team page: Sahmi Chowdhury, Fraily Ventura, James DiSanto profiles
+- [x] Holdings/Portfolio page: card-based layout with categories and status
+- [x] Contact Us page: email contact form
+- [x] News/Blog section: article listings with categories
+- [x] News/Blog: individual article pages
+- [x] LP Login button: Coming Soon toast notification
+- [x] Routing: all pages wired in App.tsx
+- [x] Vitest tests for key functionality
+- [x] Responsive design across all pages
+- [x] Switch color scheme from dark navy/gold to white and green
+- [x] Integrate uploaded Xirge logo (green diamond + XIRGE text)
+- [x] Reposition Shariah compliance as differentiator, not primary focus
+- [x] Emphasize ethical investing for ALL investors, Shariah = inclusive
+- [x] Remove overly educational/teaching tone, keep it semi-basic
+- [x] Update About page: remove "faith meets finance", reframe messaging
+- [x] Update Home hero messaging to focus on investment opportunity
+- [x] Update all pages to use white/green color palette
+- [x] Keep News & Insights section (user liked it)
+- [x] Upload team headshots to S3 (Sahmi, Fraily, James)
+- [x] Research LinkedIn profiles for professional bios
+- [x] Update Team page with real photos and LinkedIn-based bios
+- [x] Rewrite Sahmi's bio to highlight Mastercard, True Capital Management, and BBH more prominently
+- [x] Rewrite James's bio to focus on factory management, logistics, and operations
+- [x] Add deal sourcing and investor relations to Sahmi's bio and specialties
+- [x] Replace Sahmi's bio with user-provided exact text
+- [x] Fix team photos to fit perfectly round in the circle containers
+- [x] Update Sahmi's bio with Northeastern education, innerLens Media, and revised text
