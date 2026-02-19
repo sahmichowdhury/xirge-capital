@@ -33,3 +33,4 @@
 - [x] Add deal sourcing and investor relations to Sahmi's bio and specialties
 - [x] Replace Sahmi's bio with user-provided exact text
 - [x] Fix team photos to fit perfectly round in the circle containers
+- [x] Update Sahmi's bio with Northeastern education, innerLens Media, and revised text

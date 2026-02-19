@@ -18,7 +18,7 @@ const teamMembers = [
     role: "Co-Fund Manager",
     photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/eKcPzaNoSxBPDvac.jpg",
     linkedin: "https://www.linkedin.com/in/sahmi-chowdhury/",
-    bio: "Sahmi leads deal sourcing and investor relations at Xirge Capital, drawing on a career built across names in finance and technology. At Mastercard, he drives Global Bill Pay as a Product Manager within New Payment Platforms. Previously, he served as an Investment Analyst at True Capital Management, where he evaluated opportunities across asset classes, gaining deep exposure to capital markets infrastructure. Growing up in the Middle East as a Bangladeshi-American, he brings a global perspective to every deal.",
+    bio: "Sahmi leads deal sourcing and investor relations at Xirge Capital, drawing on a career built across names in finance and technology. At Mastercard, he drives Global Bill Pay as a Product Manager within New Payment Platforms. He holds a BSBA in Finance and Marketing from Northeastern University where he graduated as Cum Laude in his dual major. Previously, he served as an Investment Analyst at True Capital Management, where he evaluated opportunities across asset classes, gaining deep exposure to capital markets infrastructure. He also is the founder of an international media agency, innerLens Media. Growing up in the Middle East as a Bangladeshi-American, he brings a global perspective to every deal.",
     specialties: ["Deal Sourcing", "Investor Relations", "Capital Markets"],
   },
   {
