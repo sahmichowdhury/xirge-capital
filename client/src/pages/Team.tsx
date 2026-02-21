@@ -15,26 +15,26 @@ const stagger = {
 const teamMembers = [
   {
     name: "Sahmi Chowdhury",
-    role: "Co-Fund Manager",
+    role: "Fund Manager",
     photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/eKcPzaNoSxBPDvac.jpg",
     linkedin: "https://www.linkedin.com/in/sahmi-chowdhury/",
-    bio: "Sahmi leads deal sourcing and investor relations at Xirge Capital, drawing on a career built across names in finance and technology. At Mastercard, he drives Global Bill Pay as a Product Manager within New Payment Platforms. He holds a BSBA in Finance and Marketing from Northeastern University where he graduated as Cum Laude in his dual major. Previously, he served as an Investment Analyst at True Capital Management, where he evaluated opportunities across asset classes, gaining deep exposure to capital markets infrastructure. He also is the founder of an international media agency, innerLens Media. Growing up in the Middle East as a Bangladeshi-American, he brings a global perspective to every deal.",
+    bio: "Sahmi has deep expertise in investment analysis and evaluating opportunities across multiple asset classes, with comprehensive exposure to capital markets infrastructure, digital payments, and financial technology platforms. Sahmi also owns and operates a global media and marketing agency headquartered in New York City. His analytical skills and strategic insight provide Xirge Capital with a critical edge in identifying investment opportunities, structuring deals, and building strong investor relationships. Sahmi leads deal sourcing and investor relations at Xirge Capital, leveraging his experience across the finance and technology sectors and bringing a global perspective to every deal, shaped by his international upbringing.",
     specialties: ["Deal Sourcing", "Investor Relations", "Capital Markets"],
   },
   {
     name: "Fraily Ventura",
-    role: "Co-Fund Manager",
+    role: "Fund Manager",
     photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/MFANmDlcYunGRnIZ.jpeg",
     linkedin: "https://www.linkedin.com/in/fraily-ventura-53722b132/",
-    bio: "Fraily is a Tax Manager at Deloitte in the Investment Management group, where he advises on complex tax structures for investment funds and financial institutions. He is a licensed Certified Public Accountant (CPA) and holds a BBA in Accounting from the University of Rhode Island. His deep expertise in investment management tax compliance, fund structuring, and regulatory frameworks gives Xirge Capital a critical edge in evaluating the financial and tax efficiency of every investment opportunity. Fraily is also an active member of MetroScholars, a New Jersey-based non-profit focused on professional development.",
+    bio: "Fraily is a tax accountant with extensive experience in the Wealth and Asset Management space, with deep expertise in tax compliance for complex structures and investment funds, fund structuring, and regulatory requirements. He is a licensed Certified Public Accountant (CPA) in the state of New York and is highly knowledgeable in financial instruments, securities, and the applicable laws and compliance frameworks. His technical expertise and analytical skills provide Xirge Capital with a critical edge in evaluating investment opportunities and identifying tax efficiencies across various investment vehicles.",
     specialties: ["Tax & Compliance", "Investment Management", "Fund Structuring"],
   },
   {
-    name: "James DiSanto",
-    role: "Co-Fund Manager",
+    name: "James Chowdhury",
+    role: "Fund Manager",
     photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663361696775/MbHNSJyNjrXGimNC.jpeg",
     linkedin: "https://www.linkedin.com/in/james-disanto-267224132/",
-    bio: "James brings hands-on operational expertise to Xirge Capital, grounded in years of factory management, logistics, and supply chain operations. His background in managing production workflows, optimizing operational efficiency, and overseeing end-to-end logistics gives the fund a practical, ground-level understanding of how cash-flowing businesses actually run. James evaluates every potential investment through an operations-first lens — assessing not just the financials, but the operational infrastructure, scalability, and day-to-day execution capability of each business. His disciplined, systems-driven approach to due diligence ensures that Xirge's portfolio companies are built on strong operational foundations, complementing the team's financial and tax expertise.",
+    bio: "James brings hands-on operational leadership to Xirge Capital, shaped by years of experience in factory management, logistics, lean six sigma, and supply chain operations. His track record overseeing production systems, improving process efficiency, and strong facilitation skills, combined with his ability to perform operational due diligence, strengthens the durable operational foundation of Xirge Capital's portfolio companies and provides the fund with a practical understanding of how profitable businesses function on the ground.",
     specialties: ["Operations & Logistics", "Factory Management", "Due Diligence"],
   },
 ];
@@ -58,8 +58,8 @@ export default function Team() {
               The people behind <span className="text-gradient-green italic">Xirge.</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-              Our team of co-fund managers brings together diverse expertise in finance, tax,
-              and product strategy — united by a shared commitment to ethical investing
+              Our team of fund managers brings together diverse expertise in finance, tax,
+              and operations — united by a shared commitment to ethical investing
               and building generational wealth.
             </motion.p>
           </motion.div>
@@ -73,13 +73,13 @@ export default function Team() {
             initial="hidden"
             animate="visible"
             variants={stagger}
-            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+            className="flex flex-col lg:flex-row gap-8 justify-center"
           >
             {teamMembers.map((member) => (
               <motion.div
                 key={member.name}
                 variants={fadeUp}
-                className="group relative rounded-xl bg-white border border-border hover:border-xgreen/30 hover:shadow-lg transition-all duration-500 overflow-hidden"
+                className="group relative flex-1 rounded-xl bg-white border border-border hover:border-xgreen/30 hover:shadow-lg transition-all duration-500 overflow-hidden"
               >
                 {/* Photo area */}
                 <div className="relative p-8 pb-6 text-center">
@@ -148,7 +148,7 @@ export default function Team() {
               A team built on <span className="text-gradient-green italic">trust.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At Xirge Capital, our co-fund managers work collaboratively to evaluate every
+              At Xirge Capital, our fund managers work collaboratively to evaluate every
               opportunity through multiple lenses — financial performance, ethical compliance,
               and long-term sustainability. This multi-perspective approach ensures that our
               investors receive the most thoroughly vetted investment opportunities available.

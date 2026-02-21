@@ -36,3 +36,9 @@
 - [x] Update Sahmi's bio with Northeastern education, innerLens Media, and revised text
 - [x] Remove white background from logo and make it transparent
 - [x] Update navbar to use full logo image instead of icon + text
+- [x] Update all team member roles from "Co-Fund Manager" to "Fund Manager"
+- [x] Update James's name from "James DiSanto" to "James Chowdhury"
+- [x] Update Sahmi's bio with new text (investment analysis focus, global media agency)
+- [x] Update Fraily's bio with new text (tax accountant, wealth & asset management)
+- [x] Update James's bio with new text (lean six sigma, facilitation skills)
+- [x] Fix team grid layout (flex instead of grid for proper card sizing)
